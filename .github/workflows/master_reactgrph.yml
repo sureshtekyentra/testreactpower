@@ -33,4 +33,4 @@ jobs:
         app-name: 'reactgrph'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_dc13f4a4eaf3455197df0a94eef96b44 }}
-        package: build
+        package: ./build

@@ -25,7 +25,7 @@ jobs:
       run: |
         npm install
         npm run build --if-present
-        npm run test --if-present
+ 
 
     - name: 'Deploy to Azure Web App'
       uses: azure/webapps-deploy@v2
@@ -33,4 +33,4 @@ jobs:
         app-name: 'reactgrph'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_dc13f4a4eaf3455197df0a94eef96b44 }}
-        package: .
+        package: build

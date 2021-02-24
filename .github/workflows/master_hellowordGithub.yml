@@ -33,4 +33,4 @@ jobs:
         app-name: 'hellowordGithub'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_f47b392b70e64752814841bcc10a2302 }}
-        package: '${{ github.workspace }}/target/*.gzip'
+        package: '${{ github.workspace }}/*.gzip'
